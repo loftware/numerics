@@ -9,7 +9,12 @@ final class LoftNumericsTests: XCTestCase {
         let _ = 10.modulo(3)
     }
 
+    func testIntegerDivisionExport() {
+        let _ = 10.flooringDiv(3)
+    }
+
     static var allTests = [
         ("testModuloExport", testModuloExport),
+        ("testIntegerDivisionExport", testIntegerDivisionExport),
     ]
 }

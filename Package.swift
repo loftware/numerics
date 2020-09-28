@@ -16,7 +16,7 @@ let package = Package(
         .package(
             name: "LoftNumerics_Modulo",
             url: "git@github.com:loftware/modulo.git",
-            .branch("master"))
+            .exact("0.0.1"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.

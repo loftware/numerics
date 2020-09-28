@@ -16,6 +16,10 @@ let package = Package(
         .package(
             name: "LoftNumerics_Modulo",
             url: "git@github.com:loftware/modulo.git",
+            .exact("0.0.1")),
+        .package(
+            name: "LoftNumerics_IntegerDivision",
+            url: "git@github.com:loftware/integer-division.git",
             .exact("0.0.1"))
     ],
     targets: [
@@ -24,7 +28,8 @@ let package = Package(
         .target(
             name: "LoftNumerics",
             dependencies: [
-                "LoftNumerics_Modulo"
+                "LoftNumerics_Modulo",
+                "LoftNumerics_IntegerDivision",
             ]),
         .testTarget(
             name: "LoftNumericsTests",
